@@ -6,7 +6,7 @@ import Typography from '@mui/material/Typography';
 import Divider from '@mui/material/Divider';
 
 import large_background from '../public/assets/large_background.jpg';
-import largeSubject from '../public/assets/largeSubject.png';
+import largeSubject from '../public/assets/brightSubject.png';
 import mobile_background from '../public/assets/mobile_background.jpg';
 
 import Navbar from '../components/Navbar.js';
@@ -67,4 +67,4 @@ export default function Home() {
   )
 }
 
-// Photo assets just added for index.js, next i need to implement parralax
+// just rendered text and implemented parallax next need to format text on index route to look niceeeeee
