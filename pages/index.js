@@ -15,6 +15,14 @@ export default function Home() {
     <>
       <Paper>
         <Navbar />
+
+        <div className={styles.mobileBack} style={{
+          backgroundImage: `url('${mobile_background.src}')`,
+          backgroundRepeat: 'no-repeat',
+          backgroundSize: 'cover',
+          zIndex: 0,
+        }} />
+
         <div className={styles.back} style={{
           backgroundImage: `url('${large_background.src}')`,
           backgroundRepeat: 'no-repeat',
