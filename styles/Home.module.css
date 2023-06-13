@@ -19,3 +19,14 @@
   top: 0px;
   z-index: -1;
 }
+
+.title {
+  position: absolute;
+  /* border: 3px solid red; */
+  z-index: 0;
+  font-size: 7rem;
+  margin-top: -3rem;
+  margin-left: auto;
+  /* transform: translateZ(-1px) scale(2); */
+  color: black;
+}

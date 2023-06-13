@@ -29,6 +29,8 @@ export default function Home() {
           backgroundSize: 'cover',
           zIndex: 0
         }} />
+
+        <h1 className={styles.title}>Frontend Developer</h1>
       </Paper>
     </>
   )
