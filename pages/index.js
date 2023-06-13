@@ -1,10 +1,11 @@
-import { Inter } from 'next/font/google'
-import styles from '@/styles/Home.module.css'
+import { Inter } from 'next/font/google';
+import styles from '@/styles/Home.module.css';
 import { Paper } from '@mui/material';
+import Image from 'next/image';
 
-import large_background from '../public/assets/large_background.jpg'
-import largeSubject from '../public/assets/largeSubject.png'
-import mobile_background from '../public/assets/mobile_background.jpg'
+import large_background from '../public/assets/large_background.jpg';
+import largeSubject from '../public/assets/largeSubject.png';
+import mobile_background from '../public/assets/mobile_background.jpg';
 
 import Navbar from '../components/Navbar.js';
 
@@ -31,6 +32,9 @@ export default function Home() {
         }} />
 
         <h1 className={styles.title}>Frontend Developer</h1>
+
+        <Image className={styles.subject} src={largeSubject} alt="photo of Bryan" width='650' height='400' priority='true' quality='100' />
+
       </Paper>
     </>
   )

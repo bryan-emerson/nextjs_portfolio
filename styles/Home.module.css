@@ -30,3 +30,15 @@
   /* transform: translateZ(-1px) scale(2); */
   color: black;
 }
+
+.subject {
+  width: 21rem;
+  height: auto;
+  position: absolute;
+  zoom: 1.4;
+  z-index: 2;
+  /* border: 1px solid green; */
+  margin-left: 21rem;
+  transform: translateZ(0);
+  align-self: self-end;
+}
