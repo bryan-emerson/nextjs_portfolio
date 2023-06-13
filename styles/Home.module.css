@@ -1,3 +1,15 @@
+.parallax {
+  perspective: 1px;
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
 .back {
   position: absolute;
   height: 100vh;
@@ -27,7 +39,7 @@
   font-size: 7rem;
   margin-top: -3rem;
   margin-left: auto;
-  /* transform: translateZ(-1px) scale(2); */
+  transform: translateZ(-1px) scale(2);
   color: black;
 }
 
@@ -41,4 +53,20 @@
   margin-left: 21rem;
   transform: translateZ(0);
   align-self: self-end;
+}
+
+.box {
+  z-index: 5;
+  height: max-content;
+  width: 88vw;
+  /* border: 5px solid red; */
+  background-color: rgb(255, 255, 255);
+  border-radius: 8px;
+  margin-top: 101vh;
+  margin-left: 1rem;
+  margin-right: 2rem;
+  padding: 4rem 4rem 3rem 4rem;
+  font-size: 1.6rem;
+  /* text-align: center; */
+
 }
