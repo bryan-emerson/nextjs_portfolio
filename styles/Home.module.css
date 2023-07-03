@@ -66,11 +66,19 @@
   margin-left: 1rem;
   margin-right: 2rem;
   padding: 4rem 4rem 3rem 4rem;
-  font-size: 1.6rem;
+  /* font-size: 1.6rem; */
   /* text-align: center; */
 }
 
 .break {
   /* flex-basis: 100%; */
   height: 100px
+}
+
+.box2 {
+  margin-top: 2rem;
+  font-size: 1.6rem;
+  /* border: 1px solid #999; */
+  border-radius: 8px;
+  padding: 1rem;
 }
