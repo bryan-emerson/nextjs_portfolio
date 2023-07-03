@@ -38,7 +38,9 @@ export default function Home() {
         <h1 className={styles.title}>Frontend Developer</h1>
 
         <Image className={styles.subject} src={largeSubject} alt="photo of Bryan" width='650' height='400' priority='true' quality='100' />
-
+        <div >
+          <div className={styles.scrollDown}></div>
+        </div>
         <div className={styles.box}>
           <Typography variant="h4" align='center' gutterBottom>
             My Name Is Bryan Emerson! I&apos;m a Frontend Software Engineer with a penchant for clean code and user friendly solutions.
