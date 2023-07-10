@@ -6,27 +6,35 @@ import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 
-export default function ImgMediaCard() {
+import styles from '@/styles/projectCard.module.css'
+
+export default function ProjectCard(props) {
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card sx={{ maxWidth: 360 }} className={styles.projectCard} raised={true}>
+
       <CardMedia
-        component="img"
-        alt="green iguana"
-        height="140"
-        image="/static/images/cards/contemplative-reptile.jpg"
+        className={styles.cardMediaStyle}
+        component='img'
+        sx={{ height: 190 }}
+        image={props.projObj.image.src}
+        title='Screengrab of Project'
       />
+
       <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
-          Lizard
-        </Typography>
-        <Typography variant="body2" color="text.secondary">
-          Lizards are a widespread group of squamate reptiles, with over 6,000
-          species, ranging across all continents except Antarctica
+        <div className={styles.projName}>
+          <Typography gutterBottom variant="h5" component="div">
+            {props.projObj.name}
+          </Typography>
+        </div>
+        <Typography variant="body2" color="text.secondary" align='center' className={styles.cardText}>
+          {props.projObj.info}
         </Typography>
       </CardContent>
-      <CardActions>
-        <Button size="small">Share</Button>
-        <Button size="small">Learn More</Button>
+      <CardActions className={styles.cardLinksContainer}>
+        <div >
+          <Button size="small" href={props.projObj.git} target='none' className={styles.cardButton}>Github</Button>
+          <Button size="small" href={props.projObj.url} target='none' className={styles.cardButton}>Deployed Site</Button>
+        </div>
       </CardActions>
     </Card>
   );
@@ -34,4 +42,4 @@ export default function ImgMediaCard() {
 
 
 
-//  just rendered all of index.js for desktop. text is formatted, scroll arrow is rendered and footer is rendered. next need to make project card so that i can render projects page as desired
+//  just rendered all of index.js for desktop. text is formatted, scroll arrow is rendered and footer is rendered. next need to make project card so that i can render projects page as desired. need to style project card and projects page

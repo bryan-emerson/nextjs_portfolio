@@ -1,0 +1,41 @@
+.main {
+  /* border: 3px solid red; */
+  /* background-image: 'url("../public/large_background-2.jpg")'; */
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  align-items: center;
+  padding: 6rem;
+  /* height: 69vh; */
+  /* color: black; */
+  /* overflow: hidden; */
+  height: 100%;
+  width: 88vw;
+}
+
+
+.projectContainer {
+  background-image: 'url("../public/large_background-2.jpg")';
+  /* overflow-y: hidden; */
+  /* border: 3px solid green; */
+  width: 70vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 5rem;
+  /* height: fit-content; */
+}
+
+.title {
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.projectContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.main::-webkit-scrollbar {
+  display: none;
+}
