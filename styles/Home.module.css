@@ -125,3 +125,142 @@
   50%  { opacity: 1;  }
   100% { transform:translate(0,10px) rotate(45deg); opacity: 0; }
 }
+
+@media screen and (min-width: 1601px) {
+  .title {
+    zoom: 2;
+    /* margin-bottom: 10rem; */
+  }
+
+  .subject {
+    height: 40rem;
+    width: auto;
+    margin-left: 25vw;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1600px){
+  .subject {
+    height: 25rem;
+    width: auto;
+  }
+
+  .title {
+    margin-left: 10rem;
+  }
+}
+
+@media screen and (min-width: 821px) and (max-width: 1023px) {
+  .title {
+    /* margin-left: 8rem; */
+    font-size: 4rem;
+  }
+
+  .subject {
+    height: 21rem;
+    width: auto;
+  }
+}
+
+@media screen and (min-width: 416px) and (max-width: 820px) {
+  .title {
+    /* margin-left: 8rem; */
+    font-size: 4rem;
+  }
+
+  .subject {
+    height: 22rem;
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  .title {
+    position: relative;
+    /* border: 1px solid yellow; */
+    margin-left: 3rem;
+  }
+
+  .back {
+    display: none;
+  }
+
+  .subject {
+    height: 27rem;
+    width: auto;
+    margin-left: 11rem;
+  }
+
+  .title {
+    position: absolute;
+    /* border: 3px solid red; */
+    z-index: 0;
+    font-size: 4rem;
+    margin-top: -5rem;
+    margin-left: .7rem;
+    transform: translateZ(-1px) scale(2);
+    color: black;
+  }
+
+  .scrollDown {
+    left: 41%;
+  }
+
+
+}
+
+@media screen and (max-width: 376px) {
+  .title {
+
+  }
+
+  .back {
+    display: none;
+  }
+
+  .subject {
+    height: 21rem;
+    margin-left: 11rem;
+    width: auto;
+  }
+
+  .title {
+    position: absolute;
+    /* border: 3px solid red; */
+    z-index: 0;
+    font-size: 4rem;
+    margin-top: -5rem;
+    margin-left: .7rem;
+    transform: translateZ(-1px) scale(2);
+    color: black;
+  }
+
+  .scrollDown {
+    left: 41%;
+  }
+
+
+}
+
+@media screen and (orientation:landscape) and (min-device-width: 841px)  and (max-device-width: 1300px) {
+  .subject {
+    height:18rem;
+    width: auto;
+  }
+
+  .title {
+    font-size: 5rem;
+    margin: 1rem;
+  }
+}
+@media screen and (orientation:landscape) and (min-device-width: 840px)  and (max-device-width: 950px) {
+  .subject {
+    height:11rem;
+    width: auto;
+  }
+
+  .title {
+    font-size: 3rem;
+    margin: 2rem;
+  }
+}

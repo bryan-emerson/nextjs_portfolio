@@ -39,7 +39,3 @@ export default function ProjectCard(props) {
     </Card>
   );
 }
-
-
-
-//  just rendered all of index.js for desktop. text is formatted, scroll arrow is rendered and footer is rendered. next need to make project card so that i can render projects page as desired. need to style project card and projects page
