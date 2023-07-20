@@ -14,7 +14,6 @@
   position: absolute;
   height: 100vh;
   width: 100vw;
-  /* border: 2px solid salmon; */
   background-attachment: fixed;
   left: 0px;
   top: 0px;
@@ -25,7 +24,6 @@
   position: absolute;
   height: 100vh;
   width: 100vw;
-  /* border: 2px solid salmon; */
   background-attachment: fixed;
   left: 0px;
   top: 0px;
@@ -34,7 +32,6 @@
 
 .title {
   position: absolute;
-  /* border: 3px solid red; */
   z-index: 0;
   font-size: 7rem;
   margin-top: -3rem;
@@ -49,7 +46,6 @@
   position: absolute;
   zoom: 1.4;
   z-index: 2;
-  /* border: 1px solid green; */
   margin-left: 21rem;
   transform: translateZ(0);
   align-self: self-end;
@@ -59,35 +55,28 @@
   z-index: 5;
   height: max-content;
   width: 88vw;
-  /* border: 5px solid red; */
   background-color: rgb(255, 255, 255);
   border-radius: 8px;
   margin-top: 101vh;
   margin-left: 1rem;
   margin-right: 2rem;
   padding: 4rem 4rem 3rem 4rem;
-  /* font-size: 1.6rem; */
-  /* text-align: center; */
 }
 
 .break {
-  /* flex-basis: 100%; */
   height: 100px
 }
 
 .box2 {
   margin-top: 2rem;
   font-size: 1.6rem;
-  /* border: 1px solid #999; */
   border-radius: 8px;
   padding: 1rem;
 }
 
 .scrollDown {
   margin-bottom: 2rem;
-  /* margin-right: 3rem; */
   position: absolute;
-  /* left: 450%; */
   bottom: 10px;
   display: block;
   text-align: center;
@@ -174,8 +163,9 @@
 @media screen and (max-width: 415px) {
   .title {
     /* position: relative; */
+    /* border: 1px solid yellow; */
     margin-left: 3rem;
-    border: 1px solid red;
+    font-size: 4rem;
   }
 
   .back {
@@ -188,17 +178,6 @@
     margin-left: 11rem;
   }
 
-  .title {
-    position: absolute;
-    /* border: 3px solid red; */
-    z-index: 0;
-    font-size: 4rem;
-    margin-top: -5rem;
-    margin-left: .7rem;
-    transform: translateZ(-1px) scale(2);
-    color: black;
-  }
-
   .scrollDown {
     left: 41%;
   }
@@ -207,6 +186,9 @@
 }
 
 @media screen and (max-width: 376px) {
+  .title {
+    font-size: 4rem;
+  }
 
   .back {
     display: none;
@@ -218,22 +200,9 @@
     width: auto;
   }
 
-  .title {
-    position: absolute;
-    border: 3px solid red;
-    z-index: 1;
-    font-size: 4rem;
-    margin-top: -5rem;
-    margin-left: .7rem;
-    transform: translateZ(-1px) scale(2);
-    color: black;
-  }
-
   .scrollDown {
     left: 41%;
   }
-
-
 }
 
 @media screen and (orientation:landscape) and (min-device-width: 841px)  and (max-device-width: 1300px) {
