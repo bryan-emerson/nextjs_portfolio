@@ -1,11 +1,9 @@
 .footer {
-  /* border: 2px solid red; */
   display: flex;
   flex-direction: row;
   height: 10rem;
   background-color: inherit;
   margin-top: 1rem;
-  padding-left: 4rem;
 }
 
 .footerColumnOne {
@@ -34,4 +32,107 @@
   display: flex;
   flex-flow: column wrap;
   height: 10rem;
+}
+
+@media screen and (min-width: 541px) and (max-width: 821px) {
+
+  .lowNav {
+    height: 3rem;
+  }
+
+  .list {
+    align-items: center;
+    margin-right: 5rem;
+  }
+
+  .divider {
+    display: hidden;
+  }
+}
+
+@media screen and (min-width: 416px) and (max-width: 540px) {
+
+  .lowNav {
+    margin: 0 .5rem 0 .5rem;
+    height: 3rem;
+  }
+
+  .list {
+    align-items: center;
+    margin-right: 5rem;
+  }
+
+  .divider {
+    display: hidden;
+  }
+}
+
+@media screen  and (max-width: 415px) {
+  .footer {
+    flex-direction: column;
+  }
+
+  .list {
+    flex-flow: column nowrap;
+    align-items: center;
+    width: max-content;
+    margin-left: .5rem;
+  }
+
+  .subtitle {
+    margin-left: .5rem;
+  }
+
+  .footerColumnOne {
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 376px) and (max-width: 390px) {
+  .footer {
+    flex-direction: column;
+  }
+
+  .list {
+    flex-flow: column nowrap;
+    align-items: center;
+    margin-left: -.5rem;
+  }
+
+  .subtitle {
+    margin-left: .5rem;
+  }
+
+  .footerColumnTwo {
+    justify-content: center;
+  }
+
+
+}
+
+@media screen and (max-width: 375px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  .list {
+    flex-flow: column nowrap;
+    align-items: center;
+    margin-left: -1rem;
+  }
+
+  .lowNav {
+    margin-right: 2.5rem;
+  }
+
+  .subtitle {
+    margin-left: .5rem;
+  }
+
+  .footerColumnTwo {
+    margin-right: 10rem;
+    justify-content: center;
+  }
 }
