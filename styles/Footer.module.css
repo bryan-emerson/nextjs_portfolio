@@ -120,8 +120,6 @@
   .list {
     flex-flow: column nowrap;
     align-items: center;
-    margin-left: -1rem;
-    border: 1px solid yellow;
   }
 
   .lowNav {
